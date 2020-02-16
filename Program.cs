@@ -17,7 +17,8 @@ namespace SchoolTracker
         static List<Student> students = new List<Student>();
         static void Main(string[] args)
         {
-            
+            PayRoll payroll = new PayRoll();
+            payroll.PayAll();
 
             var adding = true;
 
@@ -129,13 +130,6 @@ namespace SchoolTracker
             Phone = phone;
         }
     }
-
-    class Teacher : Member
-    {
-        public string Subject;
-    }
-
-
 
 }
 
